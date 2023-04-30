@@ -4,10 +4,43 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="imgs/favicon-32x32.png">
         <link rel="stylesheet" href="style.css">
         <title>Rock-Paper-Scissors</title>
     </head>
     <body>
+        <div class="overlay"></div>
+        <header>
+            <div class="title">
+                <img src="imgs/logo.svg" alt="">
+            </div>
+            <div class="score">
+                <p>SCORE</p>
+                <span>12</span>
+            </div>
+        </header>
+        <section class="select">
+            <div class="triangle">
+                <img class="triangle-shape" src="imgs/bg-triangle.svg" alt="">
+                <div class="paper">
+                    <img src="imgs/icon-paper.svg" alt="">
+                </div>
+                <div class="scissors">
+                    <img src="imgs/icon-scissors.svg" alt="">
+                </div>
+                <div class="rock">
+                    <img src="imgs/icon-rock.svg" alt="">
+                </div>
+            </div>
+            <span class="rules-btn">RULES</span>
+        </section>
+        <div class="rules-page">
+            <span class="close">
+                <img src="imgs/icon-close.svg" alt="">
+            </span>
+            <h2>RULES</h2>
+            <img src="imgs/image-rules.svg" alt="">
+        </div>
         <script src="app.js"></script>
     </body>
 </html>
