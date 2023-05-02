@@ -17,6 +17,7 @@ body {
     margin: 0;
     background-image: linear-gradient(to right, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
     text-transform: uppercase;    
+    color: white;
 }
 .overlay {
     display: none;
@@ -28,8 +29,16 @@ body {
     height: 100%;
     z-index: 20;
 }
+.copyright {
+    text-align: center;
+    margin-top: 15px;
+}
+.copyright a {
+    color: hsl(189, 59%, 53%);
+    text-decoration: none;
+}
 header {
-    margin: 50px auto 0 auto;
+    margin: 35px auto 0 auto;
     display: flex;
     width: 60%;
     justify-content: space-between;
@@ -92,7 +101,6 @@ span.rules-btn {
     right: 30px;
     bottom: 30px;
     padding: 7px 25px;
-    color: white;
     border: solid white 1px;
     border-radius: 6px;
     cursor: pointer;
@@ -129,7 +137,6 @@ section.compare {
     margin: 40px auto 0 auto;
     display: none;
     gap: 70px;
-    color: white;
     align-items: center;
 }
 section.compare div {
