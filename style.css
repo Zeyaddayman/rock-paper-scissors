@@ -16,6 +16,7 @@ body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
     background-image: linear-gradient(to right, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    text-transform: uppercase;    
 }
 .overlay {
     display: none;
@@ -28,7 +29,7 @@ body {
     z-index: 20;
 }
 header {
-    margin: 50px auto 80px auto;
+    margin: 50px auto 0 auto;
     display: flex;
     width: 60%;
     justify-content: space-between;
@@ -53,6 +54,9 @@ header .score span {
     line-height: 0.5;
     color: var(--Dark-Text);
     font-weight: bold;
+}
+section.select {
+    margin-top: 80px;
 }
 section.select .triangle {
     position: relative;
@@ -83,7 +87,7 @@ section.select .rock {
     bottom: 0;
     border: hsl(349, 71%, 52%) solid 20px;
 }
-section span.rules-btn {
+span.rules-btn {
     position: absolute;
     right: 30px;
     bottom: 30px;
@@ -107,7 +111,7 @@ section span.rules-btn {
 .rules-page span.close {
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 25px;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 6px;
@@ -119,4 +123,62 @@ section span.rules-btn {
 .rules-page h2 {
     margin: 0 0 20px 0;
     color: var(--Dark-Text);
+}
+section.compare {
+    width: fit-content;
+    margin: 40px auto 0 auto;
+    display: none;
+    gap: 70px;
+    color: white;
+    align-items: center;
+}
+section.compare div {
+    display: flex;
+    flex-direction: column;
+}
+section.compare div h4 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+section.compare div div {
+    background-color: white;
+    padding: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+section.compare div div.scissors {
+    border: solid hsl(39, 89%, 49%) 30px;
+}
+section.compare div div.rock {
+    border: solid hsl(349, 71%, 52%) 30px;
+}
+section.compare div div.paper {
+    border: solid hsl(230, 89%, 62%) 30px;
+}
+section.compare div img {
+    width: 80px;
+    height: 92px;
+}
+section.compare div span.hole {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--Dark-Text);
+}
+section.compare .result h1 {
+    font-size: 40px;
+    text-align: center;
+}
+section.compare .result button {
+    padding: 20px 40px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: hsl(214, 47%, 23%);
+    transition: 0.3s;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+section.compare .result button:hover {
+    color: hsl(349, 71%, 52%);
 }
