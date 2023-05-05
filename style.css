@@ -46,12 +46,6 @@ header {
     padding: 20px 30px;
     border-radius: 10px;
 }
-@media (max-width: 767px) {
-    header {
-        width: 90%;
-        padding: 20px;
-    }
-}
 header .score {
     background-color: white;
     padding: 10px 25px;
@@ -62,7 +56,6 @@ header .score {
 header .score p {
     color: var(--Score-Text);
     font-weight: bold;
-    text-align: center;
 }
 header .score span {
     text-align: center;
@@ -87,30 +80,15 @@ section.select .triangle div {
     text-align: center;
     cursor: pointer;
 }
-@media (max-width: 767px) {
-    section.select .triangle div {
-        padding: 15px;
-    }
-}
 section.select .paper {
     left: -40px;
     top: -40px;
     border: hsl(230, 89%, 62%) solid 20px;
 }
-@media (max-width: 767px) {
-    section.select .paper {
-        left: -20px;
-    }
-}
 section.select .scissors {
     right: -40px;
     top: -40px;
     border: hsl(39, 89%, 49%) solid 20px;
-}
-@media (max-width: 767px) {
-    section.select .scissors {
-        right: -20px;
-    }
 }
 section.select .rock {
     left: 50%;
@@ -126,14 +104,6 @@ span.rules-btn {
     border: solid white 1px;
     border-radius: 6px;
     cursor: pointer;
-}
-@media (max-width: 767px) {
-    span.rules-btn {
-        position: initial;
-        display: block;
-        margin: 40px auto;
-        width: fit-content;
-    }
 }
 .rules-page {
     display: none;
@@ -166,10 +136,8 @@ section.compare {
     width: fit-content;
     margin: 40px auto 0 auto;
     display: none;
-    gap: 0 70px;
+    gap: 70px;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 section.compare div {
     display: flex;
@@ -199,19 +167,16 @@ section.compare div img {
     height: 92px;
 }
 section.compare div span.hole {
-    width: 240px;
-    height: 252px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-color: var(--Dark-Text);
-    margin: 0 auto;
 }
 section.compare .result h1 {
     font-size: 40px;
     text-align: center;
 }
 section.compare .result button {
-    width: fit-content;
-    margin: 0 auto;
     padding: 20px 40px;
     border-radius: 6px;
     font-weight: bold;
@@ -223,40 +188,4 @@ section.compare .result button {
 }
 section.compare .result button:hover {
     color: hsl(349, 71%, 52%);
-}
-@media (max-width: 991px) {
-    section.compare {
-        gap: 0 30px;
-    }
-}
-@media (max-width: 767px) {
-    section.compare {
-        gap: 0 10px;
-    }
-    section.compare div div {
-        width: fit-content;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    section.compare div img {
-        width: 53px;
-        height: 60px;
-    }
-    section.compare div span.hole {
-        width: 121px;
-        height: 128px;
-    }
-    section.compare div div.scissors {
-        border: solid hsl(39, 89%, 49%) 15px;
-    }
-    section.compare div div.rock {
-        border: solid hsl(349, 71%, 52%) 15px;
-    }
-    section.compare div div.paper {
-        border: solid hsl(230, 89%, 62%) 15px;
-    }
-    section.compare .result {
-        order: 3;
-        width: 100%;
-    }
 }
