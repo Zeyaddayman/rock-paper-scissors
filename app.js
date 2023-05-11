@@ -71,7 +71,7 @@ function chooseRandomCard() {
 function compareCards(yourCardName) {
     setTimeout(() => {
         if (yourCardName === randomPick) {
-            showResult("drew");
+            showResult("draw");
         } else if (compareObj[yourCardName] === randomPick) {
             showResult("you win");
             (score.innerHTML)++;
