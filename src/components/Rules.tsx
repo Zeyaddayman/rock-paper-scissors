@@ -15,7 +15,7 @@ const Rules = () => {
         {isOpen && (
             <div className="fixed min-w-[280px] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 p-4 bg-white rounded z-30">
                 <div className="flex justify-between items-center mb-3">
-                    <h2 className="font-bold text-2xl text-dark-text">rules</h2>
+                    <h2 className="font-bold text-2xl text-dark">rules</h2>
                     <span onClick={() => setIsOpen(false)} className="p-3 rounded hover:bg-gray-200 transition cursor-pointer">
                         <img
                             src="/images/icon-close.svg"

@@ -4,7 +4,7 @@ import Header from './components/Header'
 import Game from './components/Game'
 import Pick from './components/Pick'
 import Rules from './components/Rules'
-import type { ICHOICE } from './constants'
+import { type ICHOICE } from './constants'
 
 function App() {
 
@@ -14,6 +14,7 @@ function App() {
     return (
         <main className='text-white uppercase'>
             <Header score={score} />
+        
             <Rules />
 
             {!userPick && 

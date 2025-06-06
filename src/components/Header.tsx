@@ -7,7 +7,7 @@ const Header = ({ score }: { score: number }) => {
             />
             <div className="flex flex-col gap-1 bg-white w-25 h-25 rounded justify-center items-center">
                 <p className="font-bold text-score-text text-xl">score</p>
-                <span className="font-bold text-dark-text text-3xl">{score}</span>
+                <span className="font-bold text-dark text-3xl">{score}</span>
             </div>
         </header>
     )
