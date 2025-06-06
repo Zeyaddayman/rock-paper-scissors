@@ -6,7 +6,7 @@ const Rules = () => {
 
     return (
         <>
-        <button onClick={() => setIsOpen(true)} className="px-6 py-2 absolute right-4 bottom-2 border-2 border-white rounded cursor-pointer z-10">Rules</button>
+        <button onClick={() => setIsOpen(true)} className="px-6 py-2 fixed right-4 bottom-2 border-2 border-white rounded cursor-pointer z-10">Rules</button>
 
         {isOpen && (
             <div id="overlay" onClick={() => setIsOpen(false)} className="fixed w-screen h-screen left-0 top-0 bg-score-text opacity-10 z-20"></div>

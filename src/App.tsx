@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 import Header from './components/Header'
 import Game from './components/Game'
 import Pick from './components/Pick'
@@ -12,7 +11,7 @@ function App() {
     const [score, setScore] = useState<number>(0)
 
     return (
-        <main className='text-white uppercase'>
+        <main className='text-white uppercase pb-10'>
             <Header score={score} />
         
             <Rules />
