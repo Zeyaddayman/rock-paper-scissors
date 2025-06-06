@@ -1,60 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="imgs/favicon-32x32.png">
-        <link rel="stylesheet" href="style.css">
-        <title>Rock-Paper-Scissors</title>
-    </head>
-    <body>
-        <div class="overlay"></div>
-        <div class="copyright">
-            challenge by 
-            <a target="_blank" href="https://www.frontendmentor.io/?ref=challenge">frontend mentor</a>
-            coded by 
-            <a target="_blank" href="#">zeyad ayman</a>
-        </div>
-        <header>
-            <div class="title">
-                <img src="imgs/logo.svg" alt="">
-            </div>
-            <div class="score">
-                <p>score</p>
-                <span>0</span>
-            </div>
-        </header>
-        <section class="select">
-            <div class="triangle">
-                <img class="triangle-shape" src="imgs/bg-triangle.svg" alt="">
-                <div class="paper">
-                    <img src="imgs/icon-paper.svg" alt="">
-                </div>
-                <div class="scissors">
-                    <img src="imgs/icon-scissors.svg" alt="">
-                </div>
-                <div class="rock">
-                    <img src="imgs/icon-rock.svg" alt="">
-                </div>
-            </div>
-        </section>
-        <section class="compare">
-            <div class="your-pick"></div>
-            <div class="result"></div>
-            <div class="house-pick">
-                <h4>the house picked</h4>
-                <span class="hole"></span>
-            </div>
-        </section>
-        <span class="rules-btn">rules</span>
-        <div class="rules-page">
-            <span class="close">
-                <img src="imgs/icon-close.svg" alt="">
-            </span>
-            <h2>rules</h2>
-            <img src="imgs/image-rules.svg" alt="">
-        </div>
-        <script src="app.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
