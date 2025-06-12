@@ -12,7 +12,7 @@ const PickedChoice = ({ pick, title }: IProps) => {
             <div
                 className="bg-white rounded-full p-5 lg:p-13 border-15 lg:border-30"
                 style={{
-                    borderColor: `var(--${pick.borderColor})`
+                    borderColor: `var(--${pick.name})`
                 }}
             >
                 <img

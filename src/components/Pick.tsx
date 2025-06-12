@@ -8,7 +8,7 @@ interface IProps {
 const Pick = ({ setUserPick }: IProps) => {
     return (
         <section className="flex justify-center">
-            <div className="relative">
+            <div className="relative min-w-[313px] min-h-[278px]">
                 <img
                     src="/images/bg-triangle.svg"
                     alt="triangle"
